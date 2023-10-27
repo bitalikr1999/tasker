@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+    tasker-postgres:
+        image: postgres:11
+        restart: always
+
+        ports:
+            - ${DATABASE_PORT}:5432
+        environment:
+            POSTGRES_PASSWORD: ${DATABASE_PASS}
+            POSTGRES_USER: ${DATABASE_USER}
+            POSTGRES_DB: ${DATABASE_DB}

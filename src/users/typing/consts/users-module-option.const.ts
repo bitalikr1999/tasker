@@ -1,0 +1,1 @@
+export const USERS_MODULE_OPTION = Symbol('USERS_MODULE_OPTION');
